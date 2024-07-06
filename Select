@@ -1,1 +1,17 @@
+1. Recylable and Low fat products
 
+select product_id
+from Products
+where low_fats = 'Y' and recylable = 'Y'
+
+
+2. Find customer referee
+
+select name
+from customer
+where referee_id is null or referee_id !=2;
+
+3. Big Country
+
+select name, population, area from World
+where population >=25000000 OR area >= 3000000;
